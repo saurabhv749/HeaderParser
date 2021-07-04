@@ -17,7 +17,7 @@ app.get('/api/hello', function (req, res) {
 //// handling whoami request
 app.get('/api/whoami', function (req, res) {
   res.json({
-    ip: req.ip,
+    ipaddress: req.ip,
     language: req.header('accept-language'),
     software: req.header('user-agent'),
   })
